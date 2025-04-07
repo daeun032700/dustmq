@@ -1,14 +1,56 @@
 #아스키 코드 그림 출력하기
-v = input("입력값: ")
-#만약에 1을 입력하면 1번 캐릭터 출력
-if v == 1:
-    print(OAO)
-#만약에 2를 입력하면 2번 캐릭터 출력
-if v == 2:
-    print(>A<)
-#만약에 3을 입력하면 3번 캐릭터 출력
-if v == 3:
-    print( -.-)
-#잘못 입력하면 잘못 입력했다고 출력
-if v >= 4:
-    print("잘못입력했다")
+def print_cat():
+    cat = [
+        " /\\_/\\  ",
+        "( o.o ) ",
+        " > ^ < "
+    ]
+    for line in cat:
+        print(line)
+
+def print_bear():
+    bear = [
+        " ʕ•ᴥ•ʔ "
+    ]
+    for line in bear:
+        print(line)
+
+def print_rabbit():
+    rabbit = [
+        " (\(\ ",
+        " ( -.-) "
+    ]
+    for line in rabbit:
+        print(line)
+def play_game()
+    print("그림 출력 프로그램")
+    print("====================")
+    print("1. 고양이")
+    print("2. 곰")
+    print("3. 토 끼")
+    print("=====================")
+    n = int(input("선택:(0을 입력하면면 종료):"))
+    if n == 0:
+        print("프로그램을 종료합니다")
+        break
+
+    # 만약에 1을 입력하면 1번 캐릭터 출력
+    if n == 1:
+        print("고양이")
+        print_cat()
+    # 만약에 2를 입력하면 2번 캐릭터 출력
+    elif n == 2:
+        print("곰")
+        print_bear()
+    # 만약에 3을 입력하면 3번 캐릭터 출력
+    elif n == 3:
+        print("토끼")
+        print_rabbit()
+    # 잘못입력하면 잘못 입력했다고 출력
+    else:
+        print("잘못입력")
+
+#동물그림 출력 프로그램이 총 5번 반복 실행될수 있게 만드시오
+#할 수 있는 사람은 프로그램이 계속(무한)반복하게 하고
+while_True
+#만약에 0을 입력하면 종료되는 프로그램을 만드시오
