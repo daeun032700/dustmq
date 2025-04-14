@@ -17,24 +17,22 @@ def print_bear():
 
 def print_rabbit():
     rabbit = [
-        " (\(\ ",
+        " (\\(\\ ",
         " ( -.-) "
     ]
     for line in rabbit:
         print(line)
-def play_game()
+def show_menu():
     print("그림 출력 프로그램")
     print("====================")
     print("1. 고양이")
     print("2. 곰")
     print("3. 토 끼")
     print("=====================")
-    n = int(input("선택:(0을 입력하면면 종료):"))
-    if n == 0:
-        print("프로그램을 종료합니다")
-        break
+    print("0을 누르면 종료됩니다")
 
     # 만약에 1을 입력하면 1번 캐릭터 출력
+def play(n):
     if n == 1:
         print("고양이")
         print_cat()
@@ -49,8 +47,18 @@ def play_game()
     # 잘못입력하면 잘못 입력했다고 출력
     else:
         print("잘못입력")
-
-#동물그림 출력 프로그램이 총 5번 반복 실행될수 있게 만드시오
 #할 수 있는 사람은 프로그램이 계속(무한)반복하게 하고
-while_True
+while True:
+    show_menu()
+    try:
+        n = int(input("번호를 입력하세요: "))
+    except ValueError:
+        print("숫자를 입력해주세요!")
+        continue
+
+    if n == 0:
+        print("프로그램을 종료합니다")
+        break
+    else:
+        play(n)
 #만약에 0을 입력하면 종료되는 프로그램을 만드시오
